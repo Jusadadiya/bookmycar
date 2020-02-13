@@ -244,7 +244,9 @@
                     <tabBarItem key="tabBarItem" title="Third" image="globe" catalog="system" id="uqM-5W-zeH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="label_age" destination="BZh-OK-OAb" id="mFO-hM-mFZ"/>
                         <outlet property="picker_gender" destination="2Wn-z4-lo7" id="9yA-xv-ch1"/>
+                        <outlet property="stepper" destination="Ujo-PZ-tFY" id="1jR-5h-a4e"/>
                         <outlet property="tf_name" destination="Qk8-Uc-fvB" id="TrY-gD-xjk"/>
                     </connections>
                 </viewController>
