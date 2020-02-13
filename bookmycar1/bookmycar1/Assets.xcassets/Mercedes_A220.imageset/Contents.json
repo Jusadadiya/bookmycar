@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Mercedes_Benz.jpg",
+      "filename" : "Mercedes_A220.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Mercedes_A220.jpg",
       "scale" : "2x"
     },
     {
