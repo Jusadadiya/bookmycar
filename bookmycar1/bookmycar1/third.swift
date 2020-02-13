@@ -11,10 +11,10 @@ import UIKit
 class third: UIViewController  ,UITextFieldDelegate {
 
     @IBOutlet weak var tf_name: UITextField!
-    @IBOutlet weak var tf_age: UITextField!
+   
     @IBOutlet weak var picker_gender: UIPickerView!
     var name:String = ""
-    var age:String=""
+   
     @IBAction func adder_age(_ sender: Any) {
     }
    
@@ -23,12 +23,20 @@ class third: UIViewController  ,UITextFieldDelegate {
     
     @IBAction func submitBtnClicked(_ sender: Any) {
         name=tf_name.text!
-        age=tf_age.text!
+        if name==""
+        {
         let alertController = UIAlertController(title: "iOScreator", message:
-            name, preferredStyle: .alert)
+            "Please enter name", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
         self.present(alertController, animated: true, completion: nil)
+        }else {
+            let alertController = UIAlertController(title: "iOScreator", message:
+                name, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
