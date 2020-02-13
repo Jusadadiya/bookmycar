@@ -69,7 +69,7 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         self.picker_gender.delegate = self
         self.picker_gender.dataSource = self
         
-        pickerData = ["Male","Female","Other"]
+        pickerData = ["Male","Female"]
         stepper.wraps = true
         stepper.autorepeat = false
         stepper.maximumValue = 100
