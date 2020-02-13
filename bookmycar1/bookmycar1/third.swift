@@ -8,24 +8,41 @@
 
 import UIKit
 
-class third: UIViewController  ,UITextFieldDelegate {
+class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+     @IBOutlet weak var tf_name: UITextField!
+      
+       @IBOutlet weak var stepper: UIStepper!
+       @IBOutlet weak var picker_gender: UIPickerView!
+       var pickerData:[String] = [String]()
+       
+       var name:String = ""
+       var gender:String = ""
+       @IBOutlet weak var label_age: UILabel!
+       
+       var age:String=""
+       @IBAction func adder_age(_ sender: UIStepper) {
+           label_age.text = Int(sender.value).description
+       }
+      
+       @IBAction func switch_insurance(_ sender: Any) {
+       }
+       var message:String=""
+    //number of columns of data
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    //the number of rows data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
 
-    @IBOutlet weak var tf_name: UITextField!
-   
-    @IBOutlet weak var stepper: UIStepper!
-    @IBOutlet weak var picker_gender: UIPickerView!
-    var name:String = ""
-    
-    @IBOutlet weak var label_age: UILabel!
-    
-    var age:String=""
-    @IBAction func adder_age(_ sender: UIStepper) {
-        label_age.text = Int(sender.value).description
+    //the data to return for the row and component thats being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        gender = pickerData[row]
+        return pickerData[row]
     }
    
-    @IBAction func switch_insurance(_ sender: Any) {
-    }
-    var message:String=""
     @IBAction func submitBtnClicked(_ sender: Any) {
         name=tf_name.text!
         age=label_age.text!
@@ -37,7 +54,7 @@ class third: UIViewController  ,UITextFieldDelegate {
 
         self.present(alertController, animated: true, completion: nil)
         }else {
-            message="Hello,\(name). We have received your information as follows. Your Age is \(age) years "
+            message="Hello,\(name). We have received your information as follows. Your Age is \(age) years and gender \(gender) "
             let alertController = UIAlertController(title: "iOScreator", message:
                 message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -45,16 +62,19 @@ class third: UIViewController  ,UITextFieldDelegate {
             self.present(alertController, animated: true, completion: nil)
         }
     }
-    
+
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.picker_gender.delegate = self
+        self.picker_gender.dataSource = self
         
+        pickerData = ["Male","Female","Other"]
         stepper.wraps = true
-        stepper.autorepeat = true
+        stepper.autorepeat = false
         stepper.maximumValue = 100
         stepper.minimumValue = 16
+        
     }
-
-
+    
 }

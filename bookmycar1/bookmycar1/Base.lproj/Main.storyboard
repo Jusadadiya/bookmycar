@@ -187,7 +187,7 @@
                                 </connections>
                             </switch>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wn-z4-lo7">
-                                <rect key="frame" x="174" y="331" width="149" height="67"/>
+                                <rect key="frame" x="174" y="331" width="0.0" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="Yqt-Cc-b4f"/>
                                     <constraint firstAttribute="width" constant="149" id="lW5-Gv-8eR"/>
