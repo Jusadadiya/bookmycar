@@ -137,7 +137,7 @@
         <!--Third-->
         <scene sceneID="lXb-6S-umG">
             <objects>
-                <viewController storyboardIdentifier="Third" id="KQV-Ev-Iqa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third" id="KQV-Ev-Iqa" customClass="third" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mQW-zr-Sca">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,6 +155,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="0DK-Ez-jXd"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="adder_age:" destination="KQV-Ev-Iqa" eventType="valueChanged" id="xPF-Sz-0sT"/>
+                                </connections>
                             </stepper>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5c-e7-jZ3">
                                 <rect key="frame" x="174" y="274" width="46" height="34"/>
@@ -192,6 +195,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYw-zE-8M5">
                                 <rect key="frame" x="183" y="485" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitBtnClicked:" destination="KQV-Ev-Iqa" eventType="touchUpInside" id="zQu-Kb-PMe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sff-Yt-sdQ">
                                 <rect key="frame" x="92" y="208" width="45" height="20.5"/>
@@ -204,6 +210,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="TDL-PZ-R6F"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="switch_insurance:" destination="KQV-Ev-Iqa" eventType="valueChanged" id="EBh-KD-BPx"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -233,6 +242,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" image="globe" catalog="system" id="uqM-5W-zeH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="picker_gender" destination="2Wn-z4-lo7" id="9yA-xv-ch1"/>
+                        <outlet property="tf_age" destination="w5c-e7-jZ3" id="hWk-x2-zef"/>
+                        <outlet property="tf_name" destination="Qk8-Uc-fvB" id="TrY-gD-xjk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKA-2H-J7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

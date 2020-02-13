@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70B376523F5D1A90009BE5F /* third.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B376423F5D1A90009BE5F /* third.swift */; };
 		B74E22F123F48AAE00A38BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E22F023F48AAE00A38BA3 /* AppDelegate.swift */; };
 		B74E22F323F48AAE00A38BA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E22F223F48AAE00A38BA3 /* SceneDelegate.swift */; };
 		B74E22F523F48AAE00A38BA3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E22F423F48AAE00A38BA3 /* FirstViewController.swift */; };
@@ -16,7 +17,6 @@
 		B74E22FF23F48AAF00A38BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74E22FD23F48AAF00A38BA3 /* LaunchScreen.storyboard */; };
 		B74E230A23F48AAF00A38BA3 /* bookmycar1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E230923F48AAF00A38BA3 /* bookmycar1Tests.swift */; };
 		B74E231523F48AAF00A38BA3 /* bookmycar1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E231423F48AAF00A38BA3 /* bookmycar1UITests.swift */; };
-		B74E232D23F49C2900A38BA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E232C23F49C2900A38BA3 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B70B376423F5D1A90009BE5F /* third.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = third.swift; sourceTree = "<group>"; };
 		B74E22ED23F48AAE00A38BA3 /* bookmycar1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bookmycar1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74E22F023F48AAE00A38BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B74E22F223F48AAE00A38BA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		B74E231023F48AAF00A38BA3 /* bookmycar1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bookmycar1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74E231423F48AAF00A38BA3 /* bookmycar1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookmycar1UITests.swift; sourceTree = "<group>"; };
 		B74E231623F48AAF00A38BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B74E232C23F49C2900A38BA3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				B74E22FB23F48AAF00A38BA3 /* Assets.xcassets */,
 				B74E22FD23F48AAF00A38BA3 /* LaunchScreen.storyboard */,
 				B74E230023F48AAF00A38BA3 /* Info.plist */,
-				B74E232C23F49C2900A38BA3 /* ThirdViewController.swift */,
+				B70B376423F5D1A90009BE5F /* third.swift */,
 			);
 			path = bookmycar1;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 			files = (
 				B74E22F723F48AAE00A38BA3 /* SecondViewController.swift in Sources */,
 				B74E22F523F48AAE00A38BA3 /* FirstViewController.swift in Sources */,
-				B74E232D23F49C2900A38BA3 /* ThirdViewController.swift in Sources */,
 				B74E22F123F48AAE00A38BA3 /* AppDelegate.swift in Sources */,
 				B74E22F323F48AAE00A38BA3 /* SceneDelegate.swift in Sources */,
+				B70B376523F5D1A90009BE5F /* third.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
