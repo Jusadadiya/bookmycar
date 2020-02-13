@@ -182,9 +182,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="TDL-PZ-R6F"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="switch_insurance:" destination="KQV-Ev-Iqa" eventType="valueChanged" id="EBh-KD-BPx"/>
-                                </connections>
                             </switch>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wn-z4-lo7">
                                 <rect key="frame" x="174" y="331" width="0.0" height="67"/>
@@ -247,6 +244,7 @@
                         <outlet property="label_age" destination="BZh-OK-OAb" id="mFO-hM-mFZ"/>
                         <outlet property="picker_gender" destination="2Wn-z4-lo7" id="9yA-xv-ch1"/>
                         <outlet property="stepper" destination="Ujo-PZ-tFY" id="1jR-5h-a4e"/>
+                        <outlet property="switch_insurance" destination="tjJ-vw-eIM" id="p5P-yQ-B8I"/>
                         <outlet property="tf_name" destination="Qk8-Uc-fvB" id="TrY-gD-xjk"/>
                     </connections>
                 </viewController>
