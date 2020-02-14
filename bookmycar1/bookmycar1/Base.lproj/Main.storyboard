@@ -122,7 +122,7 @@
                                     <action selector="endDateChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XCL-0E-cVi"/>
                                 </connections>
                             </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-ai-ENB">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-ai-ENB">
                                 <rect key="frame" x="31" y="595" width="61" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="d3n-cw-x6q"/>
@@ -141,7 +141,7 @@
                                     <action selector="startDateChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="0sz-BK-NxD"/>
                                 </connections>
                             </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUS-Ze-QMN">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUS-Ze-QMN">
                                 <rect key="frame" x="308" y="595.5" width="59" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="7IG-0N-MyY"/>
