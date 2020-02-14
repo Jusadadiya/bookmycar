@@ -9,63 +9,72 @@
 import UIKit
 
 class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-     @IBOutlet weak var tf_name: UITextField!
-      
-       @IBOutlet weak var stepper: UIStepper!
-       @IBOutlet weak var picker_gender: UIPickerView!
-       var pickerData:[String] = [String]()
-       
-       var name:String = ""
-       var gender:String = ""
-       @IBOutlet weak var label_age: UILabel!
-       
-       var age:String=""
-       var insurance:String=""
-       @IBAction func adder_age(_ sender: UIStepper) {
-           label_age.text = Int(sender.value).description
-       }
-      
+    
+    //creating outlet for view controls and assigning names
+    @IBOutlet weak var tf_name: UITextField!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var picker_gender: UIPickerView!
+    @IBOutlet weak var label_age: UILabel!
     @IBOutlet weak var switch_insurance: UISwitch!
     
-       var message:String=""
-    //number of columns of data
+    //creating variables and initializing it
+    var pickerData:[String] = [String]()
+    var name:String = ""
+    var gender:String = ""
+    var age:String=""
+    var insurance:String=""
+    var message:String=""
     
+    //action creation for stepper control and using it to control age increase/decerease
+    @IBAction func adder_age(_ sender: UIStepper) {
+        label_age.text = Int(sender.value).description
+    }
+      
+    //number of columns of data in pickerview
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    //the number of rows data
+    
+    //the number of rows data in pickerview
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData.count
     }
 
-    //the data to return for the row and component thats being passed in
+    //the data to return for the row and component thats being passed in pickerview
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        gender = pickerData[row]
+        gender = pickerData[row] //storing picker choice in gender variable
         return pickerData[row]
     }
    
+    //action for on button click event
     @IBAction func submitBtnClicked(_ sender: Any) {
+        
+        //assigning values of text field name,age to respective variables
         name=tf_name.text!
         age=label_age.text!
         
+        // switch case for incurance switch control
         if switch_insurance.isOn {
-            insurance = "with car"
+            insurance = "WITH car"
         } else {
-            insurance = "without car"
+            insurance = "WITHOUT car"
         }
-        if name==""
-        {
-        let alertController = UIAlertController(title: "iOScreator", message:
+        // message alert case for invalid name input
+        if name==""{
+            
+        let alertController = UIAlertController(title: "Invalid Input", message:
             "Please enter name", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
         self.present(alertController, animated: true, completion: nil)
-        }else {
-            message="Hello,\(name). We have received your information as follows. Your Age is \(age) years and gender \(gender) and \(insurance) insurance "
-            let alertController = UIAlertController(title: "iOScreator", message:
+        }
+        // message string if data entered by user is valid
+        else{
+            message="Hello,\(name). We have confirmed your Booking. According to your input your Age is \(age) years, gender \(gender) and you booking is \(insurance) insurance "
+            
+            let alertController = UIAlertController(title: "Booking Submitted", message:
                 message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-
             self.present(alertController, animated: true, completion: nil)
         }
     }
@@ -75,13 +84,12 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         // Do any additional setup after loading the view.
         self.picker_gender.delegate = self
         self.picker_gender.dataSource = self
-        
+        //picker view data array
         pickerData = ["Male","Female"]
+        //stepper functionality to set minimum and maximum value
         stepper.wraps = true
-        stepper.autorepeat = false
+        stepper.autorepeat = true
         stepper.maximumValue = 100
         stepper.minimumValue = 16
-        
     }
-    
 }
