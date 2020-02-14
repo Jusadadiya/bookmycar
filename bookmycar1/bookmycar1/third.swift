@@ -70,7 +70,7 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         }
         // message string if data entered by user is valid
         else{
-            message="Hello,\(name). We have confirmed your Booking. According to your input your Age is \(age) years, gender \(gender) and you booking is \(insurance) insurance "
+            message="Hello,\(name). We have confirmed your Booking. According to your input your Age is \(age) years, gender \(gender) and your booking is \(insurance) insurance "
             
             let alertController = UIAlertController(title: "Booking Submitted", message:
                 message, preferredStyle: .alert)
