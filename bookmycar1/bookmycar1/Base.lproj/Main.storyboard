@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Select Car-->
+        <!--picker-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="picker" id="9pv-A4-QxB" customClass="FirstViewController" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,118 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="2228" y="-1001"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pRJ-KY-I5j">
+            <objects>
+                <navigationController id="szY-qk-Jhj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="P2G-st-eaI"/>
+                    <navigationItem key="navigationItem" id="vaR-Pv-ZLX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vFW-hA-9Ko">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R3n-Vm-lFf" kind="relationship" relationship="rootViewController" id="rEE-Fx-Tuv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z83-nP-1KB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="-320"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="jBm-Tc-6el">
+            <objects>
+                <viewController id="R3n-Vm-lFf" customClass="FirstViewController" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKp-h7-ez9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-1N-e8c">
+                                <rect key="frame" x="156" y="534" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="List of vehicles"/>
+                                <connections>
+                                    <segue destination="Eo9-a7-ac1" kind="show" id="fjw-jf-rQO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="BOOK MY CAR" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lAD-hF-V6H">
+                                <rect key="frame" x="89" y="88" width="237" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Ferrari F12" translatesAutoresizingMaskIntoConstraints="NO" id="qTA-Oh-aGs">
+                                <rect key="frame" x="125" y="211" width="165" height="141"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-XB-Mqe">
+                                <rect key="frame" x="159" y="372" width="97" height="30"/>
+                                <state key="normal" title="Show next car"/>
+                                <connections>
+                                    <action selector="btnChanges:" destination="9pv-A4-QxB" eventType="touchUpInside" id="iNt-ug-MEr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Maker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7l-Nu-Aj6">
+                                <rect key="frame" x="181" y="432" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ferrari" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-RA-dBA">
+                                <rect key="frame" x="253" y="425" width="71" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="F12" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qef-fE-EUg">
+                                <rect key="frame" x="254" y="470" width="51" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-Nh-Pcw">
+                                <rect key="frame" x="181" y="477" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LBo-RA-dBA" firstAttribute="top" secondItem="qTA-Oh-aGs" secondAttribute="bottom" constant="73" id="7Nk-Q3-zoB"/>
+                            <constraint firstItem="lfx-XB-Mqe" firstAttribute="top" secondItem="qTA-Oh-aGs" secondAttribute="bottom" constant="20" id="CNc-B3-Mzx"/>
+                            <constraint firstItem="qef-fE-EUg" firstAttribute="leading" secondItem="s8d-Nh-Pcw" secondAttribute="trailing" constant="20" id="IlY-xS-Xpg"/>
+                            <constraint firstItem="qTA-Oh-aGs" firstAttribute="top" secondItem="lAD-hF-V6H" secondAttribute="bottom" constant="80" id="QoS-wF-8Aa"/>
+                            <constraint firstItem="LBo-RA-dBA" firstAttribute="leading" secondItem="n7l-Nu-Aj6" secondAttribute="trailing" constant="20" id="ZdB-Ud-Ivm"/>
+                            <constraint firstItem="n7l-Nu-Aj6" firstAttribute="top" secondItem="lfx-XB-Mqe" secondAttribute="bottom" constant="30" id="ivK-Md-ih1"/>
+                            <constraint firstItem="s8d-Nh-Pcw" firstAttribute="top" secondItem="n7l-Nu-Aj6" secondAttribute="bottom" constant="24" id="vSg-9q-IBF"/>
+                            <constraint firstItem="qef-fE-EUg" firstAttribute="top" secondItem="LBo-RA-dBA" secondAttribute="bottom" constant="11" id="y9d-ye-kYs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lFz-gt-zQZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXU-kT-o47"/>
+                    <connections>
+                        <segue destination="Eo9-a7-ac1" kind="show" id="kjQ-RE-mmz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiU-zI-rdd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="-320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tT6-J0-ohp">
+            <objects>
+                <viewController id="Eo9-a7-ac1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8T-o7-oEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pdi-9z-pRY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="deC-wM-9cr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GA-50-zv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="-317"/>
         </scene>
         <!--Booking Date-->
         <scene sceneID="wg7-f3-ORb">
@@ -196,9 +307,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="KQV-Ev-Iqa" kind="relationship" relationship="viewControllers" id="g3x-S6-m8q"/>
+                        <segue destination="szY-qk-Jhj" kind="relationship" relationship="viewControllers" id="ZPW-yL-tqg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -330,4 +441,7 @@
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="square.grid.2x2" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kjQ-RE-mmz"/>
+    </inferredMetricsTieBreakers>
 </document>
