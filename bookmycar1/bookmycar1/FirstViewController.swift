@@ -30,8 +30,12 @@ let model = ["F12",
 // when the app starts, the first car is display automatically.
 var picscount = 1
 
+
+
 class FirstViewController: UIViewController {
 
+
+    
     // tf_maker shows the car maker related to the photo displayed
     @IBOutlet var tf_maker: UITextField!
     // tf_model shows the car model related to the photo displayed
@@ -57,7 +61,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     
