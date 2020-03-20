@@ -368,12 +368,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-o5-dqL">
-                                <rect key="frame" x="158" y="157.66666666666666" width="59" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMD-NT-g6p">
                                 <rect key="frame" x="158" y="328" width="31" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -386,6 +380,12 @@
                                     <action selector="endDateChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XCL-0E-cVi"/>
                                 </connections>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-o5-dqL">
+                                <rect key="frame" x="158" y="157.66666666666666" width="59" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -405,18 +405,20 @@
                             <constraint firstItem="MjK-B9-QYZ" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-291.5" id="h3y-VF-GAo"/>
                             <constraint firstItem="wJC-ai-ENB" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="126" id="jws-i8-1oS"/>
                             <constraint firstItem="d2T-G8-2Vp" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="14" id="kP3-q3-bLf"/>
+                            <constraint firstItem="O5s-o5-dqL" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="lqw-FD-uTm"/>
                             <constraint firstItem="JyV-Fb-UhG" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="mEq-bJ-ZCO"/>
-                            <constraint firstItem="JyV-Fb-UhG" firstAttribute="centerX" secondItem="O5s-o5-dqL" secondAttribute="centerX" id="nNL-Vf-R1c"/>
                             <constraint firstItem="d2T-G8-2Vp" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="126" id="r5Z-j7-uI3"/>
                             <constraint firstItem="MjK-B9-QYZ" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="-0.16666666666668561" id="v2g-Hz-OWY"/>
                             <constraint firstItem="O5s-o5-dqL" firstAttribute="top" secondItem="MjK-B9-QYZ" secondAttribute="bottom" constant="28" id="wSI-aE-wD3"/>
                             <constraint firstItem="sMD-NT-g6p" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="-14" id="wau-Oi-CPL"/>
-                            <constraint firstItem="O5s-o5-dqL" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yWy-bk-9oa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Booking Date" image="calendar" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="Days" destination="d2T-G8-2Vp" id="jIo-Cc-7IG"/>
+                        <outlet property="End" destination="sMD-NT-g6p" id="Uod-B2-GjG"/>
+                        <outlet property="Start" destination="O5s-o5-dqL" id="Vq6-ET-nDH"/>
                         <outlet property="endDate" destination="xRv-E0-KfF" id="vvC-fG-HhH"/>
                         <outlet property="howManyDays" destination="wJC-ai-ENB" id="Mon-bE-QgI"/>
                         <outlet property="howMuch" destination="fUS-Ze-QMN" id="YZc-o9-NpL"/>

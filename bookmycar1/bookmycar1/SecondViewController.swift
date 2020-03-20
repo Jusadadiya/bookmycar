@@ -22,11 +22,20 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var tripDates: UILabel!
     
+    @IBOutlet weak var Start: UILabel!
+    
+    @IBOutlet weak var End: UILabel!
+    
+    @IBOutlet weak var Days: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tripDates.text = NSLocalizedString("Trip dates", comment: "")
+        Start.text = NSLocalizedString("Start", comment: "")
+        End.text = NSLocalizedString("End", comment: "")
+        Days.text = NSLocalizedString("Days", comment: "")
     }
     
     override func didReceiveMemoryWarning() {
