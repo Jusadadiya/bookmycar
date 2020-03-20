@@ -20,9 +20,13 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var endDate: UIDatePicker!
     
     
+    @IBOutlet weak var tripDates: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tripDates.text = NSLocalizedString("Trip dates", comment: "")
     }
     
     override func didReceiveMemoryWarning() {

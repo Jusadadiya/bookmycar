@@ -421,6 +421,7 @@
                         <outlet property="howManyDays" destination="wJC-ai-ENB" id="Mon-bE-QgI"/>
                         <outlet property="howMuch" destination="fUS-Ze-QMN" id="YZc-o9-NpL"/>
                         <outlet property="startDate" destination="JyV-Fb-UhG" id="49A-E7-uZ3"/>
+                        <outlet property="tripDates" destination="MjK-B9-QYZ" id="K3L-8p-uNO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
