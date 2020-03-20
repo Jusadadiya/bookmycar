@@ -21,7 +21,7 @@ var speed = ["340 km/h", "259 km/h", "235 km/h", "230 km/h"]
 var myIndex = 0
 
 class TableViewController: UITableViewController {
-
+/*
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -36,7 +36,7 @@ class TableViewController: UITableViewController {
             cell.textLabel?.text = vehicle[indexPath.row]
         return cell
     }
- 
+ */
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
