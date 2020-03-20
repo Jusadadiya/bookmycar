@@ -1,0 +1,90 @@
+
+/* Class = "UINavigationItem"; title = "Select Car"; ObjectID = "4fq-fG-scb"; */
+"4fq-fG-scb.title" = "选择汽车";
+
+/* Class = "UINavigationItem"; title = "Car Info"; ObjectID = "7K9-M2-XgK"; */
+"7K9-M2-XgK.title" = "汽车信息";
+
+/* Class = "UILabel"; text = "Insurance"; ObjectID = "7tp-RX-MIZ"; */
+"7tp-RX-MIZ.text" = "保险";
+
+/* Class = "UIViewController"; title = "picker"; ObjectID = "9pv-A4-QxB"; */
+"9pv-A4-QxB.title" = "采摘机";
+
+/* Class = "UIButton"; normalTitle = "List of vehicles"; ObjectID = "BBb-1N-e8c"; */
+"BBb-1N-e8c.normalTitle" = "汽车列表";
+
+/* Class = "UILabel"; text = "Seats"; ObjectID = "BBy-Iu-4nh"; */
+"BBy-Iu-4nh.text" = "座椅";
+
+/* Class = "UILabel"; text = "16"; ObjectID = "BZh-OK-OAb"; */
+"BZh-OK-OAb.text" = "16";
+
+/* Class = "UILabel"; text = "Model:"; ObjectID = "DAT-mc-7Aa"; */
+"DAT-mc-7Aa.text" = "型号:";
+
+/* Class = "UILabel"; text = "Fuel consumption"; ObjectID = "Diq-Qn-Iba"; */
+"Diq-Qn-Iba.text" = "油耗";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "IJu-MI-rlR"; */
+"IJu-MI-rlR.text" = "年龄";
+
+/* Class = "UILabel"; text = "BOOK MY CAR"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "订车";
+
+/* Class = "UINavigationItem"; title = "Car List"; ObjectID = "LPu-cY-3Fc"; */
+"LPu-cY-3Fc.title" = "汽车列表";
+
+/* Class = "UIButton"; normalTitle = "Show next car"; ObjectID = "M5f-V5-eKr"; */
+"M5f-V5-eKr.normalTitle" = "下一辆汽车;
+
+/* Class = "UILabel"; text = "Trip dates"; ObjectID = "MjK-B9-QYZ"; */
+"MjK-B9-QYZ.text" = "日期";
+
+/* Class = "UILabel"; text = "Start"; ObjectID = "O5s-o5-dqL"; */
+"O5s-o5-dqL.text" = "出发";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "P2G-st-eaI"; */
+"P2G-st-eaI.title" = "个例";
+
+/* Class = "UITextField"; text = "F12"; ObjectID = "UbD-vN-pIA"; */
+"UbD-vN-pIA.text" = "F12";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "VWR-Xh-Ml8"; */
+"VWR-Xh-Ml8.text" = "年龄";
+
+/* Class = "UILabel"; text = "Maximum speed"; ObjectID = "Vzf-ax-3iB"; */
+"Vzf-ax-3iB.text" = "最高时速";
+
+/* Class = "UITabBarItem"; title = "Select Car"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "选择汽车";
+
+/* Class = "UILabel"; text = "Doors"; ObjectID = "bhE-lV-uj6"; */
+"bhE-lV-uj6.text" = "车门";
+
+/* Class = "UITabBarItem"; title = "Booking Date"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "预定日期";
+
+/* Class = "UILabel"; text = "Day(s) of Rental: $CAN"; ObjectID = "d2T-G8-2Vp"; */
+"d2T-G8-2Vp.text" = "天的租车时间: $加元";
+
+/* Class = "UITextField"; text = "Ferrari"; ObjectID = "fWk-Do-5vL"; */
+"fWk-Do-5vL.text" = "法拉利";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "ijP-Qu-PdF"; */
+"ijP-Qu-PdF.text" = "文件";
+
+/* Class = "UILabel"; text = "End"; ObjectID = "sMD-NT-g6p"; */
+"sMD-NT-g6p.text" = "结束";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "sff-Yt-sdQ"; */
+"sff-Yt-sdQ.text" = "名字";
+
+/* Class = "UILabel"; text = "Maker:"; ObjectID = "tu5-lp-57V"; */
+"tu5-lp-57V.text" = "车品牌:";
+
+/* Class = "UITabBarItem"; title = "Information"; ObjectID = "uqM-5W-zeH"; */
+"uqM-5W-zeH.title" = "信息";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "zYw-zE-8M5"; */
+"zYw-zE-8M5.normalTitle" = "提交";
