@@ -12,6 +12,9 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //creating outlet for view controls and assigning names
     @IBOutlet weak var tf_name: UITextField!
+    @IBAction func dismissKeyboard(sender: UITapGestureRecognizer){
+        tf_name.resignFirstResponder()
+    }
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var picker_gender: UIPickerView!
     @IBOutlet weak var label_age: UILabel!
