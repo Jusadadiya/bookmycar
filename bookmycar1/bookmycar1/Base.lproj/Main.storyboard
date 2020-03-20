@@ -84,7 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Select Car" image="square.grid.2x2" catalog="system" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" id="4fq-fG-scb"/>
+                    <navigationItem key="navigationItem" title="Select Car" id="4fq-fG-scb"/>
                     <connections>
                         <outlet property="imgView" destination="qgu-Kc-m8u" id="dB9-Qa-zuj"/>
                         <outlet property="tf_maker" destination="fWk-Do-5vL" id="RDN-dA-qLl"/>
@@ -113,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="1432" y="-320"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Car List-->
         <scene sceneID="D2e-tS-mkE">
             <objects>
                 <tableViewController id="vIA-jB-3BJ" customClass="TableViewController" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,7 +137,7 @@
                             <outlet property="delegate" destination="vIA-jB-3BJ" id="Tp6-lf-mYY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LPu-cY-3Fc"/>
+                    <navigationItem key="navigationItem" title="Car List" id="LPu-cY-3Fc"/>
                     <connections>
                         <outlet property="tableView" destination="7ba-fa-GvX" id="pSd-eG-FC5"/>
                         <segue destination="EEQ-RB-JQt" kind="show" identifier="segue" id="Xoo-bE-sEb"/>
@@ -147,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="2908" y="-319"/>
         </scene>
-        <!--List Controller-->
+        <!--Car Info-->
         <scene sceneID="kM3-wL-xT7">
             <objects>
                 <viewController id="EEQ-RB-JQt" customClass="ListController" customModule="bookmycar1" customModuleProvider="target" sceneMemberID="viewController">
@@ -245,7 +245,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xzy-08-jvR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7K9-M2-XgK"/>
+                    <navigationItem key="navigationItem" title="Car Info" id="7K9-M2-XgK"/>
                     <connections>
                         <outlet property="label1" destination="BBy-Iu-4nh" id="cEg-a4-HgW"/>
                         <outlet property="lbdoors" destination="bhE-lV-uj6" id="pHi-r0-JPH"/>
@@ -370,9 +370,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <segue destination="szY-qk-Jhj" kind="relationship" relationship="viewControllers" id="ZPW-yL-tqg"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="KQV-Ev-Iqa" kind="relationship" relationship="viewControllers" id="g3x-S6-m8q"/>
-                        <segue destination="szY-qk-Jhj" kind="relationship" relationship="viewControllers" id="ZPW-yL-tqg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -462,6 +462,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="7tp-RX-MIZ" firstAttribute="top" secondItem="VWR-Xh-Ml8" secondAttribute="bottom" constant="34" id="4VI-W4-6IK"/>
                             <constraint firstItem="sff-Yt-sdQ" firstAttribute="centerX" secondItem="mQW-zr-Sca" secondAttribute="centerX" constant="-100.5" id="Bbk-Q6-RpY"/>
@@ -488,6 +489,9 @@
                             <constraint firstItem="ijP-Qu-PdF" firstAttribute="centerX" secondItem="mQW-zr-Sca" secondAttribute="centerX" id="ymR-7K-cH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kPG-0E-6UH"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LcY-KM-ESZ" appends="YES" id="30w-Ye-odC"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="person" catalog="system" selectedImage="person" id="uqM-5W-zeH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -500,6 +504,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKA-2H-J7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LcY-KM-ESZ">
+                    <connections>
+                        <action selector="dismissKeyboardWithSender:" destination="KQV-Ev-Iqa" id="47L-jR-EUm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="57.971014492753625" y="-674.33035714285711"/>
         </scene>
