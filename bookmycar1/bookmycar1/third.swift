@@ -12,6 +12,7 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //creating outlet for view controls and assigning names
     @IBOutlet weak var tf_name: UITextField!
+    //resigning keyboard after use
     @IBAction func dismissKeyboard(sender: UITapGestureRecognizer){
         tf_name.resignFirstResponder()
     }
