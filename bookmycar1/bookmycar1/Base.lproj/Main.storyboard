@@ -131,14 +131,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ferrari F12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-Pu-Ej9">
-                                                    <rect key="frame" x="16" y="11" width="82" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ferrari F12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-Pu-Ej9">
+                                                    <rect key="frame" x="16" y="11" width="82" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SiD-Pu-Ej9" firstAttribute="leading" secondItem="A84-BB-Uo0" secondAttribute="leadingMargin" id="3e4-Nb-JFv"/>
+                                                <constraint firstItem="SiD-Pu-Ej9" firstAttribute="top" secondItem="A84-BB-Uo0" secondAttribute="topMargin" id="GZ7-cA-ZND"/>
+                                                <constraint firstItem="SiD-Pu-Ej9" firstAttribute="centerY" secondItem="A84-BB-Uo0" secondAttribute="centerY" id="On2-JD-U0q"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SiD-Pu-Ej9" secondAttribute="trailing" constant="20" symbolic="YES" id="qn2-x4-Gx1"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="cellRow"/>
                                     </tableViewCell>
@@ -149,14 +154,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porsche Taycan Turbo 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giF-QB-jYY">
-                                                    <rect key="frame" x="16" y="11" width="212" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porsche Taycan Turbo 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giF-QB-jYY">
+                                                    <rect key="frame" x="16" y="11" width="212" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="giF-QB-jYY" secondAttribute="trailing" constant="20" symbolic="YES" id="6yY-3s-RSg"/>
+                                                <constraint firstItem="giF-QB-jYY" firstAttribute="centerY" secondItem="Rx8-Y2-eQb" secondAttribute="centerY" id="F3I-kC-AJo"/>
+                                                <constraint firstItem="giF-QB-jYY" firstAttribute="leading" secondItem="Rx8-Y2-eQb" secondAttribute="leadingMargin" id="Qpg-79-vG5"/>
+                                                <constraint firstItem="giF-QB-jYY" firstAttribute="top" secondItem="Rx8-Y2-eQb" secondAttribute="topMargin" id="U3Q-ID-7QI"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="cellRow"/>
                                     </tableViewCell>
@@ -167,14 +177,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mercedes A220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGq-ax-Z9I">
-                                                    <rect key="frame" x="16" y="11" width="122" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes A220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGq-ax-Z9I">
+                                                    <rect key="frame" x="16" y="11" width="122" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PGq-ax-Z9I" firstAttribute="centerY" secondItem="Oac-SF-bTe" secondAttribute="centerY" id="ObU-aB-Kou"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PGq-ax-Z9I" secondAttribute="trailing" constant="20" symbolic="YES" id="fEU-A3-Ctk"/>
+                                                <constraint firstItem="PGq-ax-Z9I" firstAttribute="top" secondItem="Oac-SF-bTe" secondAttribute="topMargin" id="qhY-k4-nIx"/>
+                                                <constraint firstItem="PGq-ax-Z9I" firstAttribute="leading" secondItem="Oac-SF-bTe" secondAttribute="leadingMargin" id="sUa-sZ-jeT"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="cellRow"/>
                                     </tableViewCell>
@@ -185,14 +200,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volvo S90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-0W-Uy7">
-                                                    <rect key="frame" x="16" y="11" width="78" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volvo S90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-0W-Uy7">
+                                                    <rect key="frame" x="16" y="11.333333333333334" width="78" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="h9T-0W-Uy7" firstAttribute="top" secondItem="ckY-g2-g45" secondAttribute="topMargin" constant="0.3333333333333357" id="A8M-O9-yfa"/>
+                                                <constraint firstItem="h9T-0W-Uy7" firstAttribute="leading" secondItem="ckY-g2-g45" secondAttribute="leadingMargin" id="Fwe-7V-n02"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h9T-0W-Uy7" secondAttribute="trailing" constant="20" symbolic="YES" id="XAA-nF-9BQ"/>
+                                                <constraint firstItem="h9T-0W-Uy7" firstAttribute="centerY" secondItem="ckY-g2-g45" secondAttribute="centerY" id="nc0-Oc-bKn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="cellRow"/>
                                     </tableViewCell>
