@@ -25,9 +25,24 @@ var myIndex = 0
 class TableViewController: UITableViewController {
 
     //when one of the elements from the table view is selected and the segue keep the index path
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
         myIndex = indexPath.row
-        performSegue(withIdentifier: "segue", sender: self)
+        
+        //performSegue(withIdentifier: "segue", sender: self)
+        
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
+
+        // Create an action for sharing
+        let share = UIAction(title: "Details", image: UIImage(systemName: "info.circle")) { action in
+            self.performSegue(withIdentifier: "segue", sender: self)
+        }
+
+        // Create other actions...
+
+        return UIMenu(title: "", children: [share])
+        }
+        
+        
     }
     
 }

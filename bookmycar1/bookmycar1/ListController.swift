@@ -29,5 +29,6 @@ class ListController: UIViewController{
         txtdoors.text = doors[myIndex]
         txtfuel.text = fuel[myIndex]
         txtspeed.text = speed[myIndex]
+    
     }
 }
