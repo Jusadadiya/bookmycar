@@ -62,6 +62,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UbD-vN-pIA" firstAttribute="leading" secondItem="DAT-mc-7Aa" secondAttribute="trailing" constant="20" id="26Y-XM-IEg"/>
                             <constraint firstItem="BBb-1N-e8c" firstAttribute="top" secondItem="UbD-vN-pIA" secondAttribute="bottom" constant="29" id="5oK-BV-CsL"/>
@@ -355,7 +356,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjK-B9-QYZ">
-                                <rect key="frame" x="135" y="99.666666666666686" width="105" height="30.000000000000014"/>
+                                <rect key="frame" x="135" y="99.666666666666671" width="105" height="30.000000000000014"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -393,7 +394,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xRv-E0-KfF">
-                                <rect key="frame" x="39" y="359" width="297" height="90"/>
+                                <rect key="frame" x="39" y="359.33333333333331" width="297" height="89.666666666666686"/>
                                 <connections>
                                     <action selector="endDateChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XCL-0E-cVi"/>
                                 </connections>
