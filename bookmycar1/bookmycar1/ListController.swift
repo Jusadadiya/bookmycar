@@ -28,6 +28,6 @@ class ListController: UIViewController{
         txtseats.text = seats[myIndex]
         txtdoors.text = doors[myIndex]
         txtfuel.text = fuel[myIndex]
-    
+        txtspeed.text = speed[myIndex]
     }
 }

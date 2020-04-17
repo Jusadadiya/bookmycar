@@ -95,9 +95,21 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             }else if preferredLanguage == "es-419" {
                 message="Hola,\(name). Hemos confirmado tu renta. De acuerdo con la ingresado tu edad es \(age) años, genero \(gender) y tu renta es \(insurance) seguro "
             }
-            let alertController = UIAlertController(title: "Booking Submitted", message:
+            var bookings = ""
+            var cancelB = ""
+            if preferredLanguage == "en" {
+                bookings = "Booking Submitted"
+                cancelB = "Dismiss"
+            }else if preferredLanguage == "zh-Hans" {
+                bookings = "预订已提交"
+                cancelB = "解雇"
+            }else if preferredLanguage == "es-419" {
+                bookings = "Reserva enviada"
+                cancelB = "Descartar"
+            }
+            let alertController = UIAlertController(title: bookings, message:
                 message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            alertController.addAction(UIAlertAction(title: cancelB, style: .default))
             self.present(alertController, animated: true, completion: nil)
         }
     }
