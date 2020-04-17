@@ -10,21 +10,21 @@ import UIKit
 import CoreData
 
 // List of pics used to display in the image view
-let pics = ["Ferrari F12",
+let pics = ["Volvo_S90", "Mercedes_A220",
             "porsche_taycan_turbo_2019",
-            "Mercedes_A220", "Volvo_S90"]
+             "Ferrari F12"]
 
 // List of makers to associate to each pic
-let maker = ["Ferrari",
-             "Porsche",
+let maker = ["Volvo",
              "Mercedes",
-             "Volvo"]
+             "Porsche",
+             "Ferrari"]
 
 // List of models to associate to each pic
-let model = ["F12",
-             "Taycan",
+let model = ["S90",
              "A220",
-             "S90"]
+             "Taycan",
+             "F12"]
 
 
 // Initialized pic counter to get photo and details

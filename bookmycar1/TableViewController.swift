@@ -9,16 +9,16 @@
 import UIKit
 
 // List of vehicles
-var vehicle = ["Ferrari F12",
-               "porsche taycan turbo 2019",
+var vehicle = ["Volvo S90",
                "Mercedes A220",
-               "Volvo S90"]
+               "porsche taycan turbo 2019",
+               "Ferrari F12"]
 
 // list of characteristics of vehicles
-var seats = ["4", "4", "5", "5"]
-var doors = ["2", "4", "4", "4"]
-var fuel = ["22.9 l/100 km", "Electric", "6.8 l/100 km", "10.8 l/100 km"]
-var speed = ["340 km/h", "259 km/h", "235 km/h", "230 km/h"]
+var seats = ["5", "5", "4", "4"]
+var doors = ["4", "4", "4", "2"]
+var fuel = ["10.8 l/100 km", "6.8 l/100 km", "Electric",  "22.9 l/100 km"]
+var speed = ["230 km/h", "235 km/h", "259 km/h",  "340 km/h"]
 
 var myIndex = 0
 

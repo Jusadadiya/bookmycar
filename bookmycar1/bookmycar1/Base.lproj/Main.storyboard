@@ -21,8 +21,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ferrari F12" translatesAutoresizingMaskIntoConstraints="NO" id="qgu-Kc-m8u">
-                                <rect key="frame" x="105" y="261" width="165" height="141"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volvo_S90" translatesAutoresizingMaskIntoConstraints="NO" id="qgu-Kc-m8u">
+                                <rect key="frame" x="93.666666666666686" y="261" width="188" height="141"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-V5-eKr">
                                 <rect key="frame" x="139" y="422" width="97" height="30"/>
@@ -589,7 +589,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ferrari F12" width="165" height="141"/>
+        <image name="Volvo_S90" width="188" height="141"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="square.grid.2x2" catalog="system" width="64" height="56"/>
