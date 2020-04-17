@@ -26,18 +26,39 @@ let model = ["F12",
              "A220",
              "S90"]
 
-// saving to core data
-var cars : [NSManagedObject] = []
-
 
 // Initialized pic counter to get photo and details
 // Starts in 1 to skip the first car on the list because
 // when the app starts, the first car is display automatically.
-var picscount = 1
+var picscount = 2
 var message:String=""
 let preferredLanguage = NSLocale.preferredLanguages[0]
 var messageBody = ""
 var cancelMsg = ""
+
+
+func createData(){
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+    
+    let managedContext = appDelegate.persistentContainer.viewContext
+    
+    let userEntity = NSEntityDescription.entity(forEntityName: "Car", in: managedContext)!
+    
+    // add some data
+    for i in 0...3 {
+        let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+        user.setValue(maker[i], forKeyPath: "maker")
+        user.setValue(model[i], forKeyPath: "model")
+    }
+    
+    do {
+        try managedContext.save()
+    } catch let error as NSError{
+        print("Couldn't save. \(error), \(error.userInfo)")
+    }
+    
+}
+
 
 class FirstViewController: UIViewController {
 
@@ -52,13 +73,28 @@ class FirstViewController: UIViewController {
     // btnChanges action change the imgView with a new photo every time
     // the user clicks the button
     @IBAction func btnChanges(_ sender: UIButton) {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+            
+        let managedContext = appDelegate.persistentContainer.viewContext
+            
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Car")
+            
+        do {
+                let result = try managedContext.fetch(fetchRequest)
+                let results = result as! [NSManagedObject]
+                // read values from core data
+                tf_maker.text = results[picscount].value(forKeyPath: "maker") as? String
+                tf_model.text = results[picscount].value(forKeyPath: "model") as? String
+        }
+        catch {
+                print("Failed")
+        }
+        
         imgView.image = UIImage(named: pics[picscount])
         //tf_maker.text = maker[picscount]
         //tf_model.text = model[picscount]
         
-        // read values from core data
-        tf_maker.text = cars[picscount].value(forKeyPath: "maker") as? String
-        tf_model.text = cars[picscount].value(forKeyPath: "model") as? String
         // move in 1 all the array pointers
         picscount += 1
         // if it is the end of the arrays,
@@ -75,6 +111,8 @@ class FirstViewController: UIViewController {
         //add an interaction to the menu view so the system knows to show a menu when the view is pressed.
         let interaction = UIContextMenuInteraction (delegate: self)
         imgView.addInteraction(interaction)
+        
+        createData()
     }
 }
 
