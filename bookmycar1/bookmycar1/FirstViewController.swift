@@ -26,6 +26,10 @@ let model = ["F12",
              "A220",
              "S90"]
 
+// saving to core data
+var cars : [NSManagedObject] = []
+
+
 // Initialized pic counter to get photo and details
 // Starts in 1 to skip the first car on the list because
 // when the app starts, the first car is display automatically.
@@ -47,8 +51,12 @@ class FirstViewController: UIViewController {
     // the user clicks the button
     @IBAction func btnChanges(_ sender: UIButton) {
         imgView.image = UIImage(named: pics[picscount])
-        tf_maker.text = maker[picscount]
-        tf_model.text = model[picscount]
+        //tf_maker.text = maker[picscount]
+        //tf_model.text = model[picscount]
+        
+        // read values from core data
+        tf_maker.text = cars[picscount].value(forKeyPath: "maker") as? String
+        tf_model.text = cars[picscount].value(forKeyPath: "model") as? String
         // move in 1 all the array pointers
         picscount += 1
         // if it is the end of the arrays,
