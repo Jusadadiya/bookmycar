@@ -21,11 +21,13 @@ class ListController: UIViewController{
     @IBOutlet var txtfuel: UITextField!
     @IBOutlet var txtspeed: UITextField!
     
+    
+    
     override func viewDidLoad() {
         lbtitle.text = vehicle[myIndex]
         txtseats.text = seats[myIndex]
         txtdoors.text = doors[myIndex]
         txtfuel.text = fuel[myIndex]
-        txtspeed.text = speed[myIndex]
+    
     }
 }

@@ -1,0 +1,102 @@
+
+/* Class = "UINavigationItem"; title = "Select Car"; ObjectID = "4fq-fG-scb"; */
+"4fq-fG-scb.title" = "Seleccione carro";
+
+/* Class = "UINavigationItem"; title = "Car Info"; ObjectID = "7K9-M2-XgK"; */
+"7K9-M2-XgK.title" = "Información del carro";
+
+/* Class = "UILabel"; text = "Insurance"; ObjectID = "7tp-RX-MIZ"; */
+"7tp-RX-MIZ.text" = "Seguro";
+
+/* Class = "UIViewController"; title = "picker"; ObjectID = "9pv-A4-QxB"; */
+"9pv-A4-QxB.title" = "Selector";
+
+/* Class = "UIButton"; normalTitle = "List of vehicles"; ObjectID = "BBb-1N-e8c"; */
+"BBb-1N-e8c.normalTitle" = "Lista de vehiculos";
+
+/* Class = "UILabel"; text = "Seats"; ObjectID = "BBy-Iu-4nh"; */
+"BBy-Iu-4nh.text" = "Puestos";
+
+/* Class = "UILabel"; text = "16"; ObjectID = "BZh-OK-OAb"; */
+"BZh-OK-OAb.text" = "16";
+
+/* Class = "UILabel"; text = "Model:"; ObjectID = "DAT-mc-7Aa"; */
+"DAT-mc-7Aa.text" = "Modelo:";
+
+/* Class = "UILabel"; text = "Fuel consumption"; ObjectID = "Diq-Qn-Iba"; */
+"Diq-Qn-Iba.text" = "Consumo de gas";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "IJu-MI-rlR"; */
+"IJu-MI-rlR.text" = "Edad";
+
+/* Class = "UILabel"; text = "BOOK MY CAR"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "RENTA MI CARRO";
+
+/* Class = "UINavigationItem"; title = "Car List"; ObjectID = "LPu-cY-3Fc"; */
+"LPu-cY-3Fc.title" = "Lista de carros";
+
+/* Class = "UIButton"; normalTitle = "Show next car"; ObjectID = "M5f-V5-eKr"; */
+"M5f-V5-eKr.normalTitle" = "Mostrar siguiente carro";
+
+/* Class = "UILabel"; text = "Trip dates"; ObjectID = "MjK-B9-QYZ"; */
+"MjK-B9-QYZ.text" = "Fechas del viaje";
+
+/* Class = "UILabel"; text = "Start"; ObjectID = "O5s-o5-dqL"; */
+"O5s-o5-dqL.text" = "Inicio";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "P2G-st-eaI"; */
+"P2G-st-eaI.title" = "Articulo";
+
+/* Class = "UILabel"; text = "Mercedes A220"; ObjectID = "PGq-ax-Z9I"; */
+"PGq-ax-Z9I.text" = "Mercedes A220";
+
+/* Class = "UILabel"; text = "Ferrari F12"; ObjectID = "SiD-Pu-Ej9"; */
+"SiD-Pu-Ej9.text" = "Ferrari F12";
+
+/* Class = "UITextField"; text = "F12"; ObjectID = "UbD-vN-pIA"; */
+"UbD-vN-pIA.text" = "F12";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "VWR-Xh-Ml8"; */
+"VWR-Xh-Ml8.text" = "Genero";
+
+/* Class = "UILabel"; text = "Maximum speed"; ObjectID = "Vzf-ax-3iB"; */
+"Vzf-ax-3iB.text" = "Máxima velocidad";
+
+/* Class = "UITabBarItem"; title = "Select Car"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Seleccione Carro";
+
+/* Class = "UILabel"; text = "Doors"; ObjectID = "bhE-lV-uj6"; */
+"bhE-lV-uj6.text" = "Puertas";
+
+/* Class = "UITabBarItem"; title = "Booking Date"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Fecha de renta";
+
+/* Class = "UILabel"; text = "Day(s) of Rental: $CAN"; ObjectID = "d2T-G8-2Vp"; */
+"d2T-G8-2Vp.text" = "dia(s) de Renta: $COP";
+
+/* Class = "UITextField"; text = "Ferrari"; ObjectID = "fWk-Do-5vL"; */
+"fWk-Do-5vL.text" = "Ferrari";
+
+/* Class = "UILabel"; text = "Porsche Taycan Turbo 2019"; ObjectID = "giF-QB-jYY"; */
+"giF-QB-jYY.text" = "Porsche Taycan Turbo 2019";
+
+/* Class = "UILabel"; text = "Volvo S90"; ObjectID = "h9T-0W-Uy7"; */
+"h9T-0W-Uy7.text" = "Volvo S90";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "ijP-Qu-PdF"; */
+"ijP-Qu-PdF.text" = "Perfil";
+
+/* Class = "UILabel"; text = "End"; ObjectID = "sMD-NT-g6p"; */
+"sMD-NT-g6p.text" = "Fin";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "sff-Yt-sdQ"; */
+"sff-Yt-sdQ.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Maker:"; ObjectID = "tu5-lp-57V"; */
+"tu5-lp-57V.text" = "Marca:";
+
+/* Class = "UITabBarItem"; title = "Information"; ObjectID = "uqM-5W-zeH"; */
+"uqM-5W-zeH.title" = "Información";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "zYw-zE-8M5"; */
+"zYw-zE-8M5.normalTitle" = "Enviar";

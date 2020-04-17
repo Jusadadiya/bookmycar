@@ -56,12 +56,25 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         //assigning values of text field name,age to respective variables
         name=tf_name.text!
         age=label_age.text!
+        let preferredLanguage = NSLocale.preferredLanguages[0]
         
         // switch case for incurance switch control
         if switch_insurance.isOn {
-            insurance = "WITH car"
+            if preferredLanguage == "en" {
+                insurance = "WITH car"
+            }else if preferredLanguage == "zh-Hans" {
+                insurance = "带车"
+            }else if preferredLanguage == "es-419" {
+                insurance = "con"
+            }
         } else {
-            insurance = "WITHOUT car"
+            if preferredLanguage == "en" {
+                insurance = "WITHOUT car"
+            }else if preferredLanguage == "zh-Hans" {
+                insurance = "没有车"
+            }else if preferredLanguage == "es-419" {
+                insurance = "sin"
+            }
         }
         // message alert case for invalid name input
         if name==""{
@@ -74,8 +87,14 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         }
         // message string if data entered by user is valid
         else{
-            message="Hello,\(name). We have confirmed your Booking. According to your input your Age is \(age) years, gender \(gender) and your booking is \(insurance) insurance "
-            
+            let preferredLanguage = NSLocale.preferredLanguages[0]
+            if preferredLanguage == "en" {
+                message="Hello,\(name). We have confirmed your Booking. According to your input your Age is \(age) years, gender \(gender) and your booking is \(insurance) insurance "
+            } else if preferredLanguage == "zh-Hans" {
+                message="你好,\(name). 我们已经确认您的预订。 根据您的输入，您的年龄是 \(age) 年份, 性别 \(gender) 您的预订是 \(insurance) 保险 "
+            }else if preferredLanguage == "es-419" {
+                message="Hola,\(name). Hemos confirmado tu renta. De acuerdo con la ingresado tu edad es \(age) años, genero \(gender) y tu renta es \(insurance) seguro "
+            }
             let alertController = UIAlertController(title: "Booking Submitted", message:
                 message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -89,11 +108,21 @@ class third: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         self.picker_gender.delegate = self
         self.picker_gender.dataSource = self
         //picker view data array
-        pickerData = ["Male","Female"]
+        let preferredLanguage = NSLocale.preferredLanguages[0]
+        if preferredLanguage == "en" {
+            pickerData = ["Male","Female"]
+        } else if preferredLanguage == "zh-Hans" {
+            pickerData = ["男","女"]
+        }else if preferredLanguage == "es-419" {
+            pickerData = ["Masculino","Femenino"]
+        }
+        
         //stepper functionality to set minimum and maximum value
         stepper.wraps = true
         stepper.autorepeat = true
         stepper.maximumValue = 100
         stepper.minimumValue = 16
+        
+        
     }
 }

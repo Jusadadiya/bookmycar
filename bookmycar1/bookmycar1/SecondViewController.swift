@@ -80,8 +80,53 @@ class SecondViewController: UIViewController {
         }else{
             howManyDays.text = "\(components.day! )"
             // $100 per day
-            howMuch.text = "\(components.day! * 100)"
+            //howMuch.text = "\(components.day! * 100)"
+            
+            let finalvalue = components.day! * 100
+            let currencyFormatter = NumberFormatter()
+            currencyFormatter.usesGroupingSeparator = true
+            currencyFormatter.numberStyle = .currency
+            // localize to your grouping and decimal separator
+            currencyFormatter.locale = Locale.current
+            // We'll force unwrap with the !, if you've got defined data you may need more error checking
+            let priceString = currencyFormatter.string(from: NSNumber(value: finalvalue))!
+            howMuch.text = priceString
+            
         }
     }
+ /*
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) ->Bool {
+        let existingTextHasDecimalSeparator = textField.text?.range(of:".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        if existingTextHasDecimalSeparator != nil,
+            replacementTextHasDecimalSeparator != nil {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func textFIeld(textField: UITextField, shouldChangeCharactersInRange range: NSRange,
+                   replacementString string: String) ->Bool{
+        let currentLocale = NSLocale.Key()
+        let decimalSeparator
+            = currentLocale.objectForKey(NSLocaleDecimalSeparator)
+                as! String
+        
+        let separatorExists =
+            textField.text?.rangeOfString(decimalSeparator)
+        let doReplacement
+            = string.rangeOfString(decimalSeparator)
+        
+        if separatorExists != nil &&
+            doReplacement != nil {
+            return false
+        } else {
+            return true
+        }
+    }
+ */
 }
 

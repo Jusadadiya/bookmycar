@@ -61,12 +61,48 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let tapRecognizer
+        = UITapGestureRecognizer(target: self, action: #selector(tap))
+        imgView.addGestureRecognizer(tapRecognizer)
     }
-    
-    
 
+    @objc func tap(_ gestureRecognizer: UITapGestureRecognizer) {
+        
+        print("In single tap")
+        //let point = gestureRecognizer.location(in: imgView)
+        //selectedLineIndex = indexOfLineAtPoint(point)
+        
+        let menu = UIMenuController.shared
+        //if selectedLineIndex != nil {
+            becomeFirstResponder()
+            let deleteItem = UIMenuItem(title: "Delete",action: #selector(copyImg))
+            menu.menuItems = [deleteItem]
+        menu.showMenu(from: imgView, rect: CGRect(x: 1,y: 1, width:21,height:21))
+        //menu.setTargetRect(CGRect(x: 10,y: 10, width:2,height:2), in: imgView)
+            //menu.setMenuVisible(true, animated: true)
+        //} else {
+          //  menu.setMenuVisible(false, animated: true)
+        //}
+        //setNeedsDisplay()
+        
+        /*
+        print("In single tap")
+        let menu : UIMenuController = UIMenuController.shared
+        becomeFirstResponder()
+        let copyItem : UIMenuItem = UIMenuItem(title: "Copy",action: #selector(copyImg))
+        let menuItems: [UIMenuItem] = [copyItem]
+        menu.menuItems = menuItems
+        if #available(iOS 13.0, *) {
+            menu.showMenu(from: imgView, rect: CGRect(x: 100,y: 100, width:200,height:200))
+        } else {
+            menu.setTargetRect(CGRect(x: 10,y: 10, width:2,height:2), in: imgView)
+            menu.setMenuVisible(true, animated: true)
+        }
+ */
+    }
 
-
+    @objc func copyImg(){
+        print("img copied")
+    }
 }
 

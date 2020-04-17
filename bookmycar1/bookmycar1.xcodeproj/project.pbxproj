@@ -60,6 +60,10 @@
 		B74E231623F48AAF00A38BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE94CF562424278C009279B5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
 		BE94CF582424410C009279B5 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		BEC321472448EDFC008D9FE0 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		BEC321482448EDFD008D9FE0 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BEC321492448EDFD008D9FE0 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BEC3214B24490C0C008D9FE0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				"es-419",
 			);
 			mainGroup = B74E22E423F48AAE00A38BA3;
 			productRefGroup = B74E22EE23F48AAE00A38BA3 /* Products */;
@@ -324,6 +329,7 @@
 			children = (
 				3FEB2F02242563FB0084A0FD /* en */,
 				3FEB2F04242564680084A0FD /* zh-Hans */,
+				BEC321492448EDFD008D9FE0 /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -332,6 +338,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				B74E22F923F48AAE00A38BA3 /* Base */,
+				BEC321472448EDFC008D9FE0 /* es-419 */,
+				BEC3214B24490C0C008D9FE0 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B74E22FE23F48AAF00A38BA3 /* Base */,
+				BEC321482448EDFD008D9FE0 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -470,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKCL8D2QG9;
 				INFOPLIST_FILE = bookmycar1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKCL8D2QG9;
 				INFOPLIST_FILE = bookmycar1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
