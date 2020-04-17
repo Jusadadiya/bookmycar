@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 // List of pics used to display in the image view
 let pics = ["Ferrari F12",
