@@ -22,6 +22,8 @@ var speed = ["340 km/h", "259 km/h", "235 km/h", "230 km/h"]
 
 var myIndex = 0
 
+
+
 class TableViewController: UITableViewController {
 
     //when one of the elements from the table view is selected and the segue keep the index path
@@ -33,7 +35,16 @@ class TableViewController: UITableViewController {
         return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
 
         // Create an action for sharing
-        let share = UIAction(title: "Details", image: UIImage(systemName: "info.circle")) { action in
+        let preferredLanguage = NSLocale.preferredLanguages[0]
+        var messageD = ""
+        if preferredLanguage == "en" {
+            messageD = "Details"
+        }else if preferredLanguage == "zh-Hans" {
+            messageD = "细节"
+        }else if preferredLanguage == "es-419" {
+            messageD = "Detalles"
+        }
+        let share = UIAction(title: messageD, image: UIImage(systemName: "info.circle")) { action in
             self.performSegue(withIdentifier: "segue", sender: self)
         }
 

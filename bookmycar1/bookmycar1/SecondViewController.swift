@@ -36,10 +36,6 @@ class SecondViewController: UIViewController {
         Start.text = NSLocalizedString("Start", comment: "")
         End.text = NSLocalizedString("End", comment: "")
         Days.text = NSLocalizedString("Days", comment: "")
-        
-        howMuch.isUserInteractionEnabled = true
-        let interaction = UIContextMenuInteraction(delegate: self)
-        howMuch.addInteraction(interaction)
     }
     
     override func didReceiveMemoryWarning() {
@@ -134,33 +130,5 @@ class SecondViewController: UIViewController {
  */
     
     
-}
-
-
-//an extension to our view controller for that protocol:
-extension SecondViewController: UIContextMenuInteractionDelegate {
-    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-       return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
-                //here implement share action
-            let share = UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up")) { action in
-                if preferredLanguage == "en" {
-                    messageBody = "Share the picture of your next booking with your friends!"
-                    cancelMsg = "OK"
-                }else if preferredLanguage == "zh-Hans" {
-                    messageBody = "与朋友分享您下次预订的照片！"
-                    cancelMsg = "好"
-                }else if preferredLanguage == "es-419" {
-                    messageBody = "Comparte la foto de tu proximo carro a rentar con tus amigos!"
-                    cancelMsg = "OKAY"
-                }
-                let alertController = UIAlertController(title: messageBody, message:
-                    message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: cancelMsg, style: .default))
-                self.present(alertController, animated: true, completion: nil)
-        }
-               // Create and return a UIMenu with all of the actions as children
-               return UIMenu(title: "", children: [share])
-           }
-    }
 }
 
