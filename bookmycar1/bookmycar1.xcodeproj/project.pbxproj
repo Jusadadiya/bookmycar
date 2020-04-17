@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB933C1244A29570020A0F3 /* bookmycar1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB933BF244A29570020A0F3 /* bookmycar1.xcdatamodeld */; };
 		3FEB2F01242563FB0084A0FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB2F03242563FB0084A0FD /* Localizable.strings */; };
 		B70B376523F5D1A90009BE5F /* third.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B376423F5D1A90009BE5F /* third.swift */; };
 		B74E22F123F48AAE00A38BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E22F023F48AAE00A38BA3 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FB933C0244A29570020A0F3 /* bookmycar1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bookmycar1.xcdatamodel; sourceTree = "<group>"; };
 		3FEB2F02242563FB0084A0FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3FEB2F04242564680084A0FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B70B376423F5D1A90009BE5F /* third.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = third.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B74E230023F48AAF00A38BA3 /* Info.plist */,
 				B70B376423F5D1A90009BE5F /* third.swift */,
 				BE94CF582424410C009279B5 /* ListController.swift */,
+				3FB933BF244A29570020A0F3 /* bookmycar1.xcdatamodeld */,
 			);
 			path = bookmycar1;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				B74E22F323F48AAE00A38BA3 /* SceneDelegate.swift in Sources */,
 				B70B376523F5D1A90009BE5F /* third.swift in Sources */,
 				BE94CF592424410D009279B5 /* ListController.swift in Sources */,
+				3FB933C1244A29570020A0F3 /* bookmycar1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +634,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FB933BF244A29570020A0F3 /* bookmycar1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FB933C0244A29570020A0F3 /* bookmycar1.xcdatamodel */,
+			);
+			currentVersion = 3FB933C0244A29570020A0F3 /* bookmycar1.xcdatamodel */;
+			path = bookmycar1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B74E22E523F48AAE00A38BA3 /* Project object */;
 }
